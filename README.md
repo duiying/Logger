@@ -4,6 +4,12 @@
 
 <p align="center">PHP 日志库</p>  
 
+**安装**  
+
+```shell
+composer require duiying/logger
+```
+
 **使用**  
 
 ```php
