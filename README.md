@@ -1,5 +1,5 @@
 <h1 align="center">
-    Logger
+    logger
 </h1>
 
 <p align="center">PHP 日志库</p>  
@@ -15,7 +15,7 @@ composer require duiying/logger
 ```php
 // 默认日志目录：/home/work/logs/common
 $logger = \DuiYing\Logger::getInstance();
-// 自定义日志目录：/home/work/logs/api
+// 自定义日志目录
 $logger = \DuiYing\Logger::getInstance('/home/work/logs/api');
 
 $msg = '信息';
