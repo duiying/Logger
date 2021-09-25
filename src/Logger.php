@@ -5,8 +5,7 @@ namespace DuiYing;
 class Logger
 {
     // 日志目录
-    private $baseDir    = '/home/work/logs/';
-    private $dir        = 'common';
+    private $dir = '/home/work/logs/common';
 
     /**
      * 获取 Logger 实例
@@ -32,11 +31,11 @@ class Logger
         if (empty($dir)) {
             $dir = $this->dir;
         }
-        $dir = $this->baseDir . $dir . '/';
+        $dir = rtrim($dir, '/') . '/';
         if (!is_dir($dir)) {
             @mkdir($dir, 0777, true);
         }
-        $this->dir  = $dir;
+        $this->dir = $dir;
         return $this;
     }
 
