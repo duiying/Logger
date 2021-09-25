@@ -13,10 +13,10 @@ composer require duiying/logger
 **使用**  
 
 ```php
-// 日志目录：/home/work/logs/common
+// 默认日志目录：/home/work/logs/common
 $logger = \DuiYing\Logger::getInstance();
-// 日志目录：/home/work/logs/api
-$logger = \DuiYing\Logger::getInstance('api');
+// 自定义日志目录：/home/work/logs/api
+$logger = \DuiYing\Logger::getInstance('/home/work/logs/api');
 
 $msg = '信息';
 $data = ['key' => 'val'];
